@@ -1,1 +1,1 @@
-# Collection
+# Entity validator
