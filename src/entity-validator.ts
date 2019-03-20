@@ -1,5 +1,6 @@
 import { Table, Options, Validator, ErrorHandler, Indice } from './types'
 import { keyParameter, head } from './utils';
+import { propertyDecorator, methodDecorator } from './decorators';
 
 export * from './types'
 
@@ -21,3 +22,5 @@ export const setDecorator =
         return originalMethod.apply(this, args)
       }
     }
+
+export { propertyDecorator, methodDecorator }
